@@ -16,7 +16,7 @@ export function Footer() {
             Made for the Apart Research Swarm Alignment Sprint, November 2026. All packets, rules, people and records in the study are fictional. The specific attack texts are withheld on purpose; tactics are described by category only.
           </p>
           <p>
-            Site designed and built by Deepayan Sinha with Claude (Claude Code). No cookies, forms or tracking.
+            Site designed and built by Deepayan Sinha with Claude (Claude Code). Project video produced by Liezl Coetzee; how it was made is described under the video on the home page. No cookies, forms or tracking.
           </p>
         </div>
       </div>

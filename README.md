@@ -38,6 +38,6 @@ python -m http.server 4173 -d out    # preview at http://localhost:4173
 ## Before it goes public
 
 1. Liezl and Prashanth have both said yes, and judging has ended (or Apart has said public is fine).
-2. Every number re-checked against the final PDF; credit and AI-use line for the video confirmed with its maker.
-3. The video watched in full for any frame showing attack text; the slides checked the same way.
+2. Every number re-checked against the final PDF (Liezl checked the site against it on 8 Nov and sent fixes, applied the same day). The video credit and AI-use line are as Liezl supplied.
+3. Video, slides and figures: Liezl checked every frame, slide and figure on 8 Nov and found no withheld material. Open: Prashanth's look, and the optional swap of the hex ID on slide 10 for R-0000 (a change to the slide deck, not this site).
 4. `DRAFT = false`, `npm run build`, `npm run check:release` exits 0, then deploy as a new Vercel project.

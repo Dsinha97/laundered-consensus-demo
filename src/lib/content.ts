@@ -51,7 +51,8 @@ export const PEOPLE: Person[] = [
     org: "sociable",
     place: "South Africa",
     bio: [
-      "Social scientist and writer of Sociable Systems. Background in social impact assessment, resettlement and grievance mechanisms on major extractives projects. Runs comparative experiments on what AI models do to grievance and consultation evidence, built on synthetic cases informed by project experience.",
+      "Leads Sociable Systems, a South African research and advisory practice on AI governance and accountability in high-stakes industries, and writes its daily Sociable Systems newsletter.",
+      "Social scientist since 2000, working in social impact assessment, resettlement, monitoring and grievance mechanisms on major extractives projects, including twelve years running resettlement data on a large LNG development. Runs comparative experiments on what AI models do to grievance, consultation and approval evidence, built on synthetic cases informed by project experience.",
     ],
     contribution:
       "Pilot and packet design, the scripted and Invent datasets, label checks and the exclusion list, the GLM swarm, related work, limitations and dual-use.",
@@ -82,7 +83,7 @@ export const PEOPLE: Person[] = [
       "9+ years across industrial operations, R&D, sales, business development, supply chain and market research. Holds an MBA in Supply Chain Management and Consulting and a B.E. in Mechanical Engineering, bringing a systems-minded view to growth, operations and emerging technology questions.",
     ],
     contribution:
-      "Reviewed the case families and the watchdog prompt, did a blind hand read of 20 held-out packets, drafted text for the exploratory results, limitations, dual-use and false-alarm cost sections, read the draft, and hand-checked 12 attacker texts.",
+      "Reviewed the case families and the watchdog prompt, did a blind hand read of 20 held-out packets, drafted text for the exploratory results, limitations, dual-use and false-alarm cost sections, read the draft, and hand-checked 12 attacker texts (yes/no answers by hand and blind, one-line summaries model-assisted).",
     swatch: "var(--coral)",
   },
 ];
@@ -101,7 +102,8 @@ export const WHO_DID_WHAT: { work: string; who: Person["slug"][] }[] = [
   { work: "Review of case families and the watchdog prompt", who: ["prashanth"] },
   { work: "Blind hand read of 20 held-out packets", who: ["prashanth"] },
   { work: "Draft text: exploratory results, limitations, dual-use, false-alarm cost", who: ["prashanth"] },
-  { work: "Hand check of 12 attacker texts (exploratory)", who: ["prashanth"] },
+  { work: "Hand check of 12 attacker texts (exploratory; one-line summaries model-assisted)", who: ["prashanth"] },
+  { work: "Project video", who: ["liezl"] },
 ];
 
 // Report Tables 1 and 2 and Figure 5: laundered packets cleared on 2+ of 4 watchdogs, of 32 (Wilson 95% in brackets).
@@ -164,5 +166,10 @@ export const LIMITS: { head: string; body: string }[] = [
 export const WITHHELD =
   "The adaptive attacker’s winning handoffs, the planted lines, the forged notes, the chain and swarm transcripts, the attack-shaped test rows and the answer keys for the held-out and outside test sets.";
 
+export const VIDEO_BY = "Liezl Coetzee";
+
+// Credit as supplied by Liezl Coetzee on 8 Nov 2026.
 export const AI_USE_NOTE =
-  "The team used language models throughout and discloses every use in the report’s LLM Usage Statement. This site was built with Claude (Claude Code). All figures and numbers are taken from the report.";
+  "Script adapted by Claude (Anthropic) from a Google GeminiNotebook voiceover draft, checked against the report and edited by the team; narration voiced with Revoicer (“Delilah”); animation built with Claude Code using HyperFrames; slide artwork from a Google Gemini draft, edited in Canva, with additional slides and cover art by OpenAI Codex. AI use is detailed in the report’s LLM Usage Statement.";
+
+export const SITE_AI_NOTE = "This site was designed and built by Deepayan Sinha with Claude (Claude Code). All figures and numbers are taken from the report.";

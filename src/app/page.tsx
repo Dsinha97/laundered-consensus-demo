@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Info, Play } from "@/components/Icons";
-import { ABSTRACT, AI_USE_NOTE, ORGS, PEOPLE, REPORT, SLIDES, VIDEO } from "@/lib/content";
+import { ABSTRACT, AI_USE_NOTE, ORGS, PEOPLE, REPORT, SLIDES, VIDEO, VIDEO_BY } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="row" style={{ alignItems: "flex-end", justifyContent: "space-between", gap: 12 }}>
             <div>
               <p className="eyebrow" style={{ marginBottom: 10 }}>
-                Video · {VIDEO.length}
+                Video · {VIDEO.length} · produced by {VIDEO_BY}
               </p>
               <h2 id="vid" className="h2">
                 The project in two minutes
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="note">
             <Info />
             <p>
-              <strong>AI use.</strong> {AI_USE_NOTE}
+              <strong>How this video was made.</strong> Produced by {VIDEO_BY}. {AI_USE_NOTE}
             </p>
           </div>
         </div>

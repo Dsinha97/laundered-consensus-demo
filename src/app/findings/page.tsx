@@ -78,7 +78,8 @@ export default function Findings() {
               width={2000}
               height={1020}
             />
-            <figcaption className="small">Report Figure 3. The attack setups, described by category only.</figcaption>
+            <figcaption className="small">Report Figure 3. The attack setups, described by category only. The chain figures (24 to 27 of 32 with the records hidden, 2 to 3 with them visible) are raw clears on 2+
+              watchdogs. Valid successes, after the checker, were 10, 10 and 7 of 32 hidden and 2, 1 and 1 of 32 visible.</figcaption>
           </figure>
         </section>
 
@@ -105,7 +106,7 @@ export default function Findings() {
             <li className="coral">
               <span className="n">03</span>
               <div>
-                <b>Hide the records and it breaks again.</b>
+                <b>Hide the records and it breaks again (exploratory).</b>
                 <p>
                   In relay chains, clears rose from 2, 3 and 2 of 32 to 25, 27 and 24, and valid successes from 2, 1 and 1 to 10, 10 and 7. A see-the-record sentence stopped
                   the attack, but blocked every valid approval that needed a record, because a blind watchdog cannot confirm one.
@@ -115,7 +116,7 @@ export default function Findings() {
             <li className="amber">
               <span className="n">04</span>
               <div>
-                <b>Detail beats a bare claim.</b>
+                <b>Detail beats a bare claim (exploratory).</b>
                 <p>
                   Detailed descriptions of an absent record got past two or more of four hosted watchdogs on 28 of 126 outside-test packets. Forged record detail beat an
                   evidence rule when the final reviewer saw only notes (8 of 12).
@@ -125,10 +126,10 @@ export default function Findings() {
             <li className="teal">
               <span className="n">05</span>
               <div>
-                <b>Training can teach a watchdog to check.</b>
+                <b>Training helped on an exploratory outside test.</b>
                 <p>
                   On an outside test from a different generator, the base Gemma missed 41 of 126 described-but-absent packets; the tuned models missed none, with 0 to 2 false
-                  alarms in about 280 valid rows. We do not claim this hardens a watchdog against adaptive attack.
+                  alarms in about 280 valid rows. This is a purpose-built stress test, and we do not claim it hardens a watchdog against adaptive attack.
                 </p>
               </div>
             </li>

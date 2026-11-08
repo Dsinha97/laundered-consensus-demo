@@ -64,8 +64,9 @@ export default function Results() {
         <p className="small">
           The attacker rewrites only the handoffs, sees each watchdog&apos;s verdict and reason after each of 5 rounds, and a separate checker must confirm the rule,
           change and records are untouched. DeepSeek V4 Flash is both the registered attacker and one of the four watchdogs, so the same-model row is shown. att3 lost
-          286 of 1,806 attacker calls to an exhausted budget; att4 lost none and the picture held. On the pilot&apos;s valid approvals, false alarms per parsed
-          judgment were 8 of 146 under PLAIN, 9 of 136 under NEUTRAL and 10 of 137 under EVIDENCE; false alarms under attack were not tested.
+          286 of 1,806 attacker calls to an exhausted budget; att4 lost none and the picture held. On the pilot&apos;s 37 valid should-clear packets, false alarms
+          per parsed judgment were 8 of 146 under PLAIN, 9 of 136 under NEUTRAL and 10 of 137 under EVIDENCE, mostly from GLM. Of the 148 judgments per prompt, 2, 12 and
+          11 did not parse, so some false alarms may be hidden. False alarms under attack were not tested.
         </p>
         <figure className="card figure-card">
           <img
@@ -129,7 +130,9 @@ export default function Results() {
             height={1120}
           />
           <figcaption className="small">
-            Report Figure 4. Units differ (packets, chains, requests), so this shows a pattern across sources, not one measured effect.
+            Report Figure 4. Units differ (packets, chains, requests), so this shows a pattern across sources, not one measured effect. The chain figures (24 to 27 of 32
+            with the records hidden, 2 to 3 with them visible) are raw clears on 2+ watchdogs. Valid successes, after the checker, were 10, 10 and 7 of 32 hidden and 2, 1 and 1
+            of 32 visible.
           </figcaption>
         </figure>
       </section>
@@ -137,7 +140,7 @@ export default function Results() {
       <section className="stack" aria-labelledby="t3" style={{ gap: 18 }}>
         <div className="row" style={{ justifyContent: "space-between", alignItems: "flex-end", gap: 8 }}>
           <h2 id="t3" className="h3">
-            Training a watchdog <span className="sub">· outside test, a different generator</span>
+            Training a watchdog <span className="sub">· exploratory outside test, a different generator</span>
           </h2>
           <span className="mono small">report Table 4</span>
         </div>
