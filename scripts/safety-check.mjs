@@ -29,8 +29,6 @@ const CHECKS = [
   ["cookie write", /document\.cookie\s*=|set-cookie/gi],
   // Swarm-specific: internal mechanism ids and column names from the withheld answer keys.
   ["internal mechanism id", /described_absent|explained_gap_flag|notes_only_flag|silent_record_flag/gi],
-  // The repository is private until all three authors agree; do not leak its name before then.
-  ["private repository link", /github\.com\/Dsinha97\/laundered-consensus/gi],
   ["sealed or withheld file name", /WITHHOLD[_.-]|prash-sealed|\bsealed[_-][\w-]*\.(csv|jsonl|tsv)/g],
   ["leftover Quiet Suppression copy", /quiet[- ]suppression-demo|quiet-suppression\.vercel/gi],
 ];

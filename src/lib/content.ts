@@ -4,13 +4,13 @@
 // forged note, transcript or answer key belongs in this file (see README.md, "What stays out").
 
 // Set to false only when all three authors agree to publish. `npm run check -- --release` fails while it is true.
-export const DRAFT = true;
+export const DRAFT = false;
 
-// The repository is private. The report says: "public once all authors agree; otherwise available on request."
-export const CODE_NOTE = "Code and data are available on request. The repository goes public if all three authors agree.";
+// The code repository is public. Withheld attack material stays in a separate private repository, available to reviewers on request (report Appendix A).
+export const CODE_NOTE = "Code, freezes and text-free results are public at github.com/Dsinha97/laundered-consensus. Withheld attack material is available to reviewers on request.";
 
 // Final report, Liezl Coetzee's fixed PDF of 8 Nov (body ends on page 8).
-export const REPORT = { src: "/report/laundered-consensus-report.pdf", size: "400 KB" };
+export const REPORT = { src: "/report/laundered-consensus-report.pdf", size: "404 KB" };
 export const SLIDES = { src: "/slides/laundered-consensus-slides.pdf", size: "6.4 MB" };
 
 export const VIDEO = {

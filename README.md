@@ -1,8 +1,8 @@
-# Laundered Consensus: companion site (draft)
+# Laundered Consensus: companion site
 
 A static companion site for the Swarm Alignment Sprint report *Laundered Consensus: Do AI Watchdogs Check the Approvals Other Agents Claim?* (Coetzee, Sinha, Vijay, Apart Research, November 2026).
 
-**Status: draft, not public.** It goes live only when all three authors agree, and not before judging ends (the Swarm onboarding material says submissions stay hidden until then because of infohazard risk). `DRAFT` in `src/lib/content.ts` is `true`; while it is, the site shows a banner and asks search engines not to index it, and `npm run check:release` fails.
+**Status: public (8 Nov 2026).** All three authors agreed. `DRAFT` in `src/lib/content.ts` is `false`, and `npm run check:release` passes.
 
 ## Prior work
 
